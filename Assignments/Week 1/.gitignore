@@ -1,0 +1,16 @@
+# Generated portfolio reports
+Reports/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+
+# macOS files
+.DS_Store
+
+# Local configuration
+.rebalance_config.json
+.quant_python_rebalancer.json
