@@ -27,7 +27,20 @@ Built reusable market-microstructure functions for:
 - Inventory mark-to-market P&L
 - Net market-maker P&L
 
-The Week 2 work is the foundation for a larger market-making and trading simulation.
+The Week 2 work established the core market-microstructure calculations used in later assignments.
+
+### Week 3 — Trading Calculations Module
+Expanded the trading utilities into a cleaner reusable module with:
+
+- Midpoint and bid/ask spread calculations
+- Spread percentage normalization
+- Buy/sell execution-edge logic
+- Execution P&L
+- Inventory P&L
+- Net trading P&L
+- Formatted reporting and interpretation
+
+The Week 3 module is structured as a reusable building block for a larger market-making simulator.
 
 ## Goals
 
@@ -49,8 +62,11 @@ Quant-Python/
 │   │   ├── assignment_1b_questions.md
 │   │   ├── plaid_data.py
 │   │   └── README.md
-│   └── Week 2/
-│       ├── assignment_2a.py
+│   ├── Week 2/
+│   │   ├── assignment_2a.py
+│   │   └── README.md
+│   └── Week 3/
+│       ├── assignment_3a.py
 │       └── README.md
 ├── .gitignore
 └── README.md
@@ -75,4 +91,4 @@ This repository will continue to expand into:
 
 ## Status
 
-Active coursework. Week 1 and the Week 2 Wednesday checkpoint are complete, with larger trading-simulation work continuing in Week 2.
+Active coursework. Week 1, Week 2, and the Week 3 Wednesday trading-calculations assignment are complete. The next step is extending these reusable components into a larger market-making simulator.
