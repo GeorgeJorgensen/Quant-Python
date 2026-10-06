@@ -1,8 +1,8 @@
-# Week 3 — Trading Calculations Module
+# Week 3 — Trading Analytics Toolkit & Market-Making Simulator
 
-## Assignment 3A
+## Assignment 3A — Trading Analytics Toolkit
 
-This assignment turns core market-microstructure calculations into reusable Python functions that can later be integrated into a larger market-making simulator.
+This assignment expands the core market-microstructure calculations into a reusable reporting module.
 
 ### Functions included
 
@@ -32,8 +32,24 @@ This assignment turns core market-microstructure calculations into reusable Pyth
 - Inventory P&L: -$300
 - Net P&L: -$100
 
-### Main lesson
+The module separates execution quality from inventory risk and provides a reusable foundation for larger trading simulations.
 
-A trader can earn positive execution edge and still lose money overall if inventory moves against the position. The assignment separates execution quality from inventory risk and combines both into total trading P&L.
+## Assignment 3B — Market-Making Simulator
 
-This module is designed to become a building block for the larger market-making simulator.
+`assignment_3b.py` builds on the Trading Analytics Toolkit to simulate market making across large-cap U.S. equities using historical market data.
+
+The simulator:
+
+- Downloads market data for multiple symbols
+- Generates bid and ask quotes around a midpoint
+- Simulates repeated order flow
+- Tracks inventory and average cost
+- Calculates realized, unrealized, and total P&L
+- Measures spread capture and inventory risk
+- Produces a multi-symbol market-making dashboard
+
+The current universe includes AAPL, MSFT, NVDA, AMZN, GOOGL, META, AVGO, TSLA, BRK-B, and JPM.
+
+## Main Lesson
+
+Market-making profitability depends on more than earning the bid/ask spread. A strategy must also manage inventory risk, adverse price movement, and position exposure while maintaining consistent execution.
