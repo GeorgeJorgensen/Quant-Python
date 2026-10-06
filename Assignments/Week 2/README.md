@@ -1,14 +1,14 @@
-# Week 2 — Trading Utility Functions
+# Week 2 — Trading Analytics Toolkit
 
 ## Overview
 
-Week 2 focuses on market microstructure and the P&L mechanics of a market maker.
+This project builds a reusable Python toolkit for analyzing market microstructure, execution quality, and trading P&L.
 
-The first assignment builds small reusable Python functions that calculate quoting metrics, execution edge, inventory mark-to-market P&L, and total trading P&L.
+The toolkit calculates quoting metrics, execution edge, inventory mark-to-market P&L, and total trading P&L.
 
 ## Assignment 2A
 
-`assignment_2a.py` currently includes functions for:
+`assignment_2a.py` includes functions for:
 
 - Calculating the midpoint between bid and ask
 - Calculating the bid/ask spread
@@ -39,7 +39,7 @@ In the sample scenario:
 - Inventory P&L = -$300
 - Net P&L = -$100
 
-This demonstrates an important market-making concept: earning spread at execution does not guarantee a profitable trade if the inventory subsequently moves against the dealer.
+This demonstrates an important market-making concept: earning spread at execution does not guarantee a profitable trade if inventory subsequently moves against the dealer.
 
 ## Skills Practiced
 
@@ -54,4 +54,4 @@ This demonstrates an important market-making concept: earning spread at executio
 
 ## Next Step
 
-Expand these reusable functions into a larger market-making simulation with multiple trades, inventory tracking, and deeper P&L analysis.
+Use the Trading Analytics Toolkit as the foundation for a larger market-making simulator with repeated trades, inventory tracking, and deeper P&L analysis.
