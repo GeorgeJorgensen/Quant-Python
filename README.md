@@ -2,6 +2,36 @@
 
 This repository contains my Python coursework, quantitative finance exercises, trading tools, and projects as I prepare for quantitative trading roles.
 
+## Featured Projects
+
+### Trading Analytics Toolkit
+Built reusable market-microstructure and trade-analysis tools that calculate:
+
+- Bid/ask midpoint
+- Dollar and percentage spread
+- Execution edge versus fair value
+- Execution P&L
+- Inventory mark-to-market P&L
+- Net trading P&L
+- Formatted trade reports
+
+The toolkit separates execution quality from inventory risk and is designed as a reusable foundation for larger trading simulations.
+
+### Market-Making Simulator
+Built a Python market-making simulator using historical market data across large-cap U.S. equities.
+
+The simulator:
+
+- Downloads multi-symbol market data
+- Generates bid/ask quotes around a calculated midpoint
+- Simulates repeated order flow
+- Tracks position and average cost
+- Calculates realized, unrealized, and total P&L
+- Monitors spread capture and inventory risk
+- Produces a multi-symbol market-making dashboard
+
+The project currently runs across AAPL, MSFT, NVDA, AMZN, GOOGL, META, AVGO, TSLA, BRK-B, and JPM.
+
 ## Current Progress
 
 ### Week 1 — Portfolio Rebalancing Engine
@@ -16,31 +46,11 @@ Built a multi-account portfolio rebalancing workflow that:
 - Produces a formatted Excel report
 - Supports automated email delivery
 
-### Week 2 — Trading Utility Functions
-Built reusable market-microstructure functions for:
+### Week 2 — Trading Analytics Toolkit
+Built the core market-microstructure calculations used in later assignments, including execution edge, spread analysis, inventory P&L, and net trading P&L.
 
-- Bid/ask midpoint
-- Dollar spread
-- Spread percentage
-- Execution edge versus fair value
-- Execution P&L
-- Inventory mark-to-market P&L
-- Net market-maker P&L
-
-The Week 2 work established the core market-microstructure calculations used in later assignments.
-
-### Week 3 — Trading Calculations Module
-Expanded the trading utilities into a cleaner reusable module with:
-
-- Midpoint and bid/ask spread calculations
-- Spread percentage normalization
-- Buy/sell execution-edge logic
-- Execution P&L
-- Inventory P&L
-- Net trading P&L
-- Formatted reporting and interpretation
-
-The Week 3 module is structured as a reusable building block for a larger market-making simulator.
+### Week 3 — Trading Analytics + Market-Making Simulator
+Expanded the trading toolkit into a formatted reporting module and then built a multi-symbol market-making simulator using real historical equity data.
 
 ## Goals
 
@@ -67,6 +77,7 @@ Quant-Python/
 │   │   └── README.md
 │   └── Week 3/
 │       ├── assignment_3a.py
+│       ├── assignment_3b.py
 │       └── README.md
 ├── .gitignore
 └── README.md
@@ -91,4 +102,4 @@ This repository will continue to expand into:
 
 ## Status
 
-Active coursework. Week 1, Week 2, and the Week 3 Wednesday trading-calculations assignment are complete. The next step is extending these reusable components into a larger market-making simulator.
+Active coursework. The Trading Analytics Toolkit and Market-Making Simulator are complete and will continue to be expanded with additional trading, options, and strategy-research projects.
